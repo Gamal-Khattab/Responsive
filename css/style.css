@@ -1,0 +1,509 @@
+/* container */
+.container{
+    margin: auto
+}
+/* hedear */
+header{
+    background-color:#fff;
+    padding: 20px
+
+}
+/* logo */
+header .container .logo >img{
+    width: 60px;
+    margin: 12px 0 0 20px
+}
+/* container  header */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 auto
+}
+.logo{
+    height: 48px
+}
+/* Nav */
+
+header .container nav{
+    position: relative;
+    margin-right:100px
+
+}
+nav >ul{
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    background: #fff;
+    min-width: 150px;
+    right: -48px;
+    top: 63%;
+    display: none
+}
+nav ul::before {
+    content: " ";
+    position: absolute;
+    top: -24px;
+    margin-right: -12px;
+    right: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: var(--main-color) var(--main-color)  transparent var(--main-color) 
+}
+
+nav i{
+    -webkit-transition:.3s;
+    -moz-transition: .3s;
+    border-radius: 50%;
+    display: block
+}
+nav i:hover{
+    transform: translateY(3px);
+    -webkit-transform:translateY(3px);
+    -moz-transform:translateY(3px) ;
+    background-color: var(--main-color)
+}
+nav:hover ul{
+    display: block
+}
+nav:hover i{
+    display: none
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 13px;
+    -webkit-transition:.3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+a:hover{
+    color: #aaa;
+}
+nav ul li:not(:last-child){
+    border-bottom:1px solid #ccc;
+}
+
+/* Article */
+article {
+    background-color: #f6f6f6;
+    padding-bottom: 200px;
+    background-image: url(../imgs/mountains-1112911_1920.jpg);
+    background-size: cover;
+}
+
+/* Article container */
+article .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+article .container h2 {
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+article .container p{
+    font-size: 20px;
+    white-space: pre-line;
+    text-align: center;
+    line-height: 1.6;
+    color: #d6cece;
+}
+/* section */
+
+section .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    column-gap:20px;
+    padding:60px;
+}
+section .container >div {
+    text-align: center;
+    line-height: 1.6;
+}
+section .container> div:nth-child(2){
+box-shadow: 2px 2px 0px 0px rgb(230 230 230);
+} 
+section .container div  i{
+    font-size: 40px;
+    color: var(--main-color);
+    padding-bottom: 15px;
+}
+section .container div  p{
+    font-size: 15px;
+    color:#555
+}
+section .container div h3{
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+}
+/* Features .................... */
+.services .container {
+    position: relative;
+
+}
+.heading-spec{
+    color: #f3f3f3;
+    text-align: center;
+    font-size: 162px;
+    font-weight: 800;
+    margin: 0;
+   
+}
+.heading-spec + p {
+    margin: 0;
+    position: absolute;
+    top: 128px;
+    left: 33%;
+    color: #555;
+    font-size: 25px;
+}
+/* grid servces */
+.grid-services {
+    padding: 80px
+}
+
+.serv5{
+    border-right: 30px solid var(--sub-color);
+    position: relative;
+    width: 330px;
+    margin-top: 30px;
+}
+
+.serv5:before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 35%;
+    background-color: var(--sub-color);
+    top: -30px;
+    right: -30px;
+}
+.serv5::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 35%;
+    background-color: var(--sub-color);
+    bottom: -30px;
+    right: -30px;
+}
+.grid-services .container i{
+    font-size: 30px;
+    margin: 18px 0 0 0px;
+    flex-basis: 51px;
+    color: var(--main-color)
+}
+.grid-services .container .col1> div,.grid-services .container .col2> div{
+    display: flex
+}
+.spec{
+    
+    flex: 1
+}
+/* Portfolio */
+.portfolio{
+    background-color: #ccc;
+}
+.portfolio .container {
+    position: relative
+
+}
+/* Portoflio Grid */
+.port-grid{
+    padding: 60px;
+    background-color: #ccc
+}
+
+.port-grid .container >div :first-child img{
+    width: 100%;
+    height: 220px;
+    display: block;
+    margin-top: 20px
+    
+}
+.port-grid .container >div h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 5px 0 ;
+    color: #333
+
+}
+.port-grid .container .text{
+    background-color: #eee;
+    padding: 20px;
+    line-height: 1.7
+}
+.port-grid .container >div p{
+    font-size: 15px;
+    margin: 0;
+    color: #666
+    
+}
+/* Start About */
+.about .container{
+    position: relative
+}
+/* End About */
+
+/*  Strat about-grid  */
+.about-grid {
+    padding: 70px
+}
+.about-grid .container{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(450px,1fr));
+    column-gap: 20px
+}
+.about-grid .container div:first-child{
+    display: flex;
+    align-self: center;
+    justify-content: right;
+    border-left: 10px solid #ccc;
+    position: relative;
+    width: 360px;
+    height: 400px
+}
+
+.about-grid .container :last-child{
+    line-height: 1.7;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 30px
+}
+.about-grid .container h3{
+    color: #333;
+    margin-top: -40px
+   
+}
+.about-grid .container p{
+    color: #666;
+    margin-bottom: 20px;
+    position: relative
+}
+ /* Before and after of about  */
+ .about-grid .container div:first-child::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 35%;
+    background-color: #ccc;
+    top: -30px;
+    left: -10px
+}
+.about-grid .container img{
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important
+}
+.about-grid .container p::before{
+    content: "";
+    position: absolute;
+    height: 2.5px;
+    width: 50%;
+    background-color: #10cab7;
+    top: -22px;
+    left: 0px
+}
+.about-grid .container div:first-child::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 35%;
+    background-color: #ccc;
+    bottom: -30px;
+    left: -10px
+}
+/*  End about-grid */
+
+/* Start Contact */
+.contact{
+    background-color: #ccc;
+}
+.contact .container{
+    position: relative
+    
+}
+/* End Contact */
+/* About Grid Start */
+.contact{
+    background-color: #ccc;
+    padding: 60px;
+}
+.contact-grid{
+    background-color: #ccc;
+    padding: 30px
+}
+
+.contact-grid .container .before-foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60px
+}
+.contact-grid .container h2{
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--sub-color);
+    margin: 0;
+    padding-bottom: 25px
+}
+.contact-grid .container a{
+    font-size: 50px;
+    font-weight: 800;
+    color: #10cab7;
+    margin: 0;
+    margin-right: 86px;
+    text-decoration:none
+    
+}
+.contact-grid .fonts {
+    display: flex;
+    max-width: 800px;
+    min-width: 521px;
+    margin-top: 35px;
+    color: var(--sub-color)
+}
+.contact-grid .container p{
+    font-size: 15px;
+    margin: 0;
+    flex-basis: 220px
+}
+.contact-grid i {
+    flex-basis: 40px;
+    margin-top: 5px;
+    font-size: 20px
+
+}
+.contact-grid i:hover{
+    color: #4c85a1 ;
+}
+/* About Grid End */
+/* Start Footer */
+footer{
+    background-color:var(--sub-color);
+}
+footer .container{
+    
+    padding:20px;
+    color: white
+}
+footer span{
+    color: var(--main-color);
+    font-weight: bold
+}
+/* End Footer */
+::selection{
+    background-color: black
+}
+/* Media ...................................................................... */
+/* Phone */
+@media (max-width:767px){
+    .heading-spec{
+        font-size: 110px
+    }
+
+    .heading-spec + p {
+        font-size: 20px;
+        top: 87px;
+        left: 29%
+    }
+    section .container >div {
+        padding-top: 20px}
+
+    .grid-services .container .col1> div,.grid-services .container .col2> div{
+        display: flex;
+        flex-direction: column;
+        text-align: center
+    }
+    .serv5{
+        display: none
+    }
+    .port-grid .container div :not(:first-child){
+        text-align: center;
+    }
+    .port-grid .container >div :first-child img{
+        height:100%
+        
+    }
+    .about-grid .container div:first-child {
+        justify-content: center;
+        margin: auto;
+    }
+    .about-grid .container :last-child {
+        text-align: center
+    }
+    .about-grid .container h3{
+        margin-top: 50px
+    }
+    .contact-grid .fonts {
+       justify-content: center;
+       align-items: center
+    }
+    .contact-grid .container h2 {
+        font-size: 35px
+        
+}
+.contact-grid .container a{
+    font-size: 30px;
+    margin-right:0
+}
+
+  }
+ /* Custom Screen */
+ @media (max-width:992px){
+    section .container {
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr))
+       
+    }
+    section .container >div {
+    padding-top: 30px;}
+ }
+
+/* Small Screen............................................. */
+@media (min-width:768px) and (max-width:991px){
+    .container{
+        width: 750px
+    }
+    .serv5{
+        display: none
+    }
+    .about-grid .container :last-child {
+        text-align: center
+    }
+    .about-grid .container div:first-child {
+        justify-content: center;
+        margin: auto
+    }
+    .about-grid .container h3{
+        margin-top: 50px
+    }
+  
+}
+/* Meduim Screem */
+@media (min-width:992px){
+    .container{
+        width: 970px
+    }
+
+    
+}
+
+/* Large Screen */
+@media (min-width:1200px){
+    .container{
+        width: 1170px
+    }
+}
